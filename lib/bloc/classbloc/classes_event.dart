@@ -1,4 +1,4 @@
-part of 'classes_bloc.dart';
+part of '../classes_bloc.dart';
 
 @immutable
 abstract class ClassesEvent extends Equatable {}

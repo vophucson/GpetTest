@@ -20,7 +20,6 @@ class TitleCus extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(7.0),
       child: Container(
-        height: 160,
         width: 700,
         decoration: BoxDecoration(
           color: Colors.white,
@@ -83,11 +82,8 @@ class TitleCus extends StatelessWidget {
                 widget
               ],
             ),
-            const SizedBox(
-              height: 10,
-            ),
             Padding(
-              padding: const EdgeInsets.only(left: 20.0),
+              padding: const EdgeInsets.fromLTRB(10, 8, 0, 10),
               child: Text(
                 subTitle,
                 style: const TextStyle(fontSize: 10, color: Colors.grey),

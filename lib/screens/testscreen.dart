@@ -104,8 +104,8 @@ class TestPageState extends State<TestPage> {
                     value: 0.4,
                     valueColor: AlwaysStoppedAnimation(Colors.blue.shade300),
                     backgroundColor: Colors.white,
-                    borderColor: Colors.blueAccent.shade100,
-                    borderWidth: 2.0,
+                    borderColor: Colors.blue.shade300,
+                    borderWidth: 2,
                     direction: Axis.vertical,
                     center: const Text(
                       "40%",
@@ -119,7 +119,7 @@ class TestPageState extends State<TestPage> {
                 pass: 32,
                 total: 80),
             const Padding(
-              padding: EdgeInsets.only(left: 15.0),
+              padding: EdgeInsets.only(left: 14.0),
               child: Text(
                 'Lịch học',
                 style: TextStyle(
@@ -174,14 +174,16 @@ class TestPageState extends State<TestPage> {
                         crossAxisCount: 3,
                         crossAxisSpacing: 3.0,
                         mainAxisSpacing: 3.0,
-                        childAspectRatio: 0.75,
+                        childAspectRatio: 0.69,
                         padding: const EdgeInsets.all(5.0),
                         children: List.generate(items.length, (index) {
-                          return ItemClass(
-                              number: items[index].number,
-                              imageUrl: items[index].imageUrl,
-                              date: items[index].date,
-                              pass: items[index].pass);
+                          return SizedBox(
+                            child: ItemClass(
+                                number: items[index].number,
+                                imageUrl: items[index].imageUrl,
+                                date: items[index].date,
+                                pass: items[index].pass),
+                          );
                         }),
                       ));
                 } else {
@@ -234,7 +236,7 @@ class TestPageState extends State<TestPage> {
                         crossAxisCount: 3,
                         crossAxisSpacing: 3.0,
                         mainAxisSpacing: 3.0,
-                        childAspectRatio: 0.75,
+                        childAspectRatio: 0.69,
                         padding: const EdgeInsets.all(5.0),
                         children: List.generate(items.length, (index) {
                           return ItemClass(

@@ -21,7 +21,7 @@ class AvartContainer extends StatelessWidget {
         ),
         Positioned(
           top: -50,
-          left: 140,
+          left: MediaQuery.of(context).size.width / 2.8,
           child: Container(
             width: 120.0,
             height: 120.0,
@@ -42,7 +42,7 @@ class AvartContainer extends StatelessWidget {
         ),
         Positioned(
             top: 70,
-            left: 130,
+            left: MediaQuery.of(context).size.width / 3.2,
             child: Column(
               children: const [
                 Padding(

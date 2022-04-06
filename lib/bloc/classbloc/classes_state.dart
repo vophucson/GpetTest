@@ -1,4 +1,4 @@
-part of 'classes_bloc.dart';
+part of '../classes_bloc.dart';
 
 class ClassesState extends Equatable {
   final int show;

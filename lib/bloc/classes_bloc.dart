@@ -2,8 +2,8 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
-part 'classes_event.dart';
-part 'classes_state.dart';
+part 'classbloc/classes_event.dart';
+part 'classbloc/classes_state.dart';
 
 class ClassesBloc extends Bloc<ClassesEvent, ClassesState> {
   ClassesBloc() : super(const ClassesState(show: 1)) {
